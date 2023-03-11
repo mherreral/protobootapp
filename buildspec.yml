@@ -1,24 +1,24 @@
 version: 0.2
 
 #env:
-  #variables:
-     # key: "value"
-     # key: "value"
-  #parameter-store:
-     # key: "value"
-     # key: "value"
-  #secrets-manager:
-     # key: secret-id:json-key:version-stage:version-id
-     # key: secret-id:json-key:version-stage:version-id
-  #exported-variables:
-     # - variable
-     # - variable
-  #git-credential-helper: yes
+#variables:
+# key: "value"
+# key: "value"
+#parameter-store:
+# key: "value"
+# key: "value"
+#secrets-manager:
+# key: secret-id:json-key:version-stage:version-id
+# key: secret-id:json-key:version-stage:version-id
+#exported-variables:
+# - variable
+# - variable
+#git-credential-helper: yes
 #batch:
-  #fast-fail: true
-  #build-list:
-  #build-matrix:
-  #build-graph:
+#fast-fail: true
+#build-list:
+#build-matrix:
+#build-graph:
 phases:
   install:
     #Si utiliza la imagen estándar de Ubuntu 2.0 o posterior, debe especificar las versiones del tiempo de ejecución.
@@ -27,12 +27,12 @@ phases:
       java: corretto11
       # name: version
     #commands:
-      # - command
-      # - command
+    # - command
+    # - command
   #pre_build:
-    #commands:
-      # - command
-      # - command
+  #commands:
+  # - command
+  # - command
   build:
     commands:
       - mvn compile
@@ -47,12 +47,13 @@ phases:
 reports:
   jacoco-report:
     files:
-      - 'target/site/jacoco/jacoco.xml'
-    file-format: 'JACOCOXML'
+      - "target/site/jacoco/jacoco.xml"
+    file-format: "JACOCOXML"
   junit-report:
     files:
-      - 'target/surefire-reports/*.xml'
-    file-format: 'JUNITXML'
+      - "target/surefire-reports/*.xml"
+    file-format:
+      "JUNITXML"
       # - location
     #base-directory: location
     #discard-paths: yes
@@ -65,5 +66,5 @@ artifacts:
   #discard-paths: yes
   #base-directory: location
 #cache:
-  #paths:
-    # - paths
+#paths:
+# - paths
