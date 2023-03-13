@@ -7,7 +7,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 class ProtobootappApplicationTests {
 
-    //Esta prueba falla si el application context no puede iniciar, pero no es habitual
+    // Esta prueba falla si el application context no puede iniciar, pero no es
+    // habitual
     @Test
     void contextLoads() {
     }
