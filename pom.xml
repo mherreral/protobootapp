@@ -46,7 +46,7 @@
                     <consoleOutput>true</consoleOutput>
                     <failsOnError>true</failsOnError>
                     <violationSeverity>warning</violationSeverity>
-                    <failOnViolation>true</failOnViolation
+                    <failOnViolation>true</failOnViolation> 
                     <linkXRef>false</linkXRef>
                 </configuration>
                 <executions>
